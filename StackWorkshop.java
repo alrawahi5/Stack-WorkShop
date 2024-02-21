@@ -15,6 +15,10 @@ class StackWorkshop{
     public static void main(String[] args) {
 
         Stack<Integer> myStack = new Stack<Integer>();
+        myStack.push(5);
+        myStack.push(8);
+        myStack.push(35);
+
         System.out.println(myStack.size());
 //
 
