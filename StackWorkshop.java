@@ -18,9 +18,14 @@ class StackWorkshop{
         myStack.push(5);
         myStack.push(8);
         myStack.push(35);
+        
+        System.out.println("The first element that is removed is: " + myStack.pop());
+
+        System.out.println("The secound element that is removed is: " + myStack.pop());
+
+        System.out.println("The third element that is removed is: " + myStack.pop());
 
         System.out.println(myStack.size());
-//
 
 
 
