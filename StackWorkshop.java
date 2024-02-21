@@ -29,6 +29,7 @@ class StackWorkshop{
         System.out.println("The Integer stack is empty: " + " " +  myStack.empty());
         System.out.println("The String stack is empty: " + " " +  myStringStack.empty() + " and it has " + myStringStack.peek());
 
+        System.out.println(myStringStack.size());
         System.out.println(myStack.size());
 
 
