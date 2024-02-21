@@ -19,6 +19,11 @@ class StackWorkshop{
         myStack.push(8);
         myStack.push(35);
 
+        System.out.println("The first element in the stack is: " + myStack.getFirst());
+        System.out.println("The secound element in the stack is: " + myStack.get(1));
+        System.out.println("The third element in the stack is: " + myStack.getLast());
+
+        System.out.println(" ");
         System.out.println("The first element that is removed is: " + myStack.pop());
         System.out.println("The secound element that is removed is: " + myStack.pop());
         System.out.println("The third element that is removed is: " + myStack.pop());
@@ -26,6 +31,7 @@ class StackWorkshop{
         Stack<String> myStringStack = new Stack<String>();
         myStringStack.push("Abdullah");
 
+        System.out.println(" ");
         System.out.println("The Integer stack is empty: " + " " +  myStack.empty());
         System.out.println("The String stack is empty: " + " " +  myStringStack.empty() + " and it has " + myStringStack.peek());
 
