@@ -76,15 +76,15 @@ class StackWorkshop{
                 System.out.println("Would you like to add another character?: ");
                 str = stackScanner.nextLine();
             }
-        System.out.println("you have pushed " + str +
-                " therefore you get what is stored in the stack. Look: " + myScannerStack.peek());
+        //System.out.println("you have pushed " + str + " therefore you get what is stored in the stack. Look: " + myScannerStack.peek());
 
 
-        clearStackElements(myScannerStack);
-        System.out.println(myScannerStack);
+       // clearStackElements(myScannerStack);
+       // System.out.println(myScannerStack);
 
         boolean a = balancedParentheses(myScannerStack);
-        System.out.println(a);
+        System.out.println("you entered " + myScannerStack + " which was compared to " + "[(,)] || [(, )] || [( ,)] || [( , )]");
+        System.out.println("the Parentheses are balanced: "+a);
 
 
     }
