@@ -14,6 +14,15 @@ import java.util.Scanner;
 import java.util.Stack;
 
 class StackWorkshop{
+
+//this function gets called after the undo code is executed
+    public static String clearStackElements(Stack<String> cleared){
+        if(!cleared.empty()){
+            cleared.removeAllElements();
+        }
+        return "The stack is already empty! ";
+    }
+
     public static void main(String[] args) {
 
         Stack<Integer> myStack = new Stack<Integer>();
@@ -54,6 +63,10 @@ class StackWorkshop{
             }
         System.out.println("you have pushed " + str +
                 " therefore you get what is stored in the stack. Look: " + myScannerStack.peek());
+
+            
+        clearStackElements(myScannerStack);
+        System.out.println(myScannerStack);
     }
 
 }
