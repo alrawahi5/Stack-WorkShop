@@ -23,6 +23,21 @@ class StackWorkshop{
         return "The stack is already empty! ";
     }
 
+    //this function gets executed after entering the copared values, and then entring "undo"
+    //to test the spaces, make sure to only enter the Parentheses
+    //to know whether they are balanced, you can play with the leading spaces.
+    public static boolean balancedParentheses(Stack<String> unpalanced){
+        Boolean flag = Boolean.FALSE;
+        Stack<String> palanced = new Stack<String>();
+        palanced.push("(");
+        palanced.push(")");
+        if(unpalanced != palanced ){
+            return flag = true;
+        }
+        return flag;
+    }
+
+
     public static void main(String[] args) {
 
         Stack<Integer> myStack = new Stack<Integer>();
@@ -64,9 +79,14 @@ class StackWorkshop{
         System.out.println("you have pushed " + str +
                 " therefore you get what is stored in the stack. Look: " + myScannerStack.peek());
 
-            
+
         clearStackElements(myScannerStack);
         System.out.println(myScannerStack);
+
+        boolean a = balancedParentheses(myScannerStack);
+        System.out.println(a);
+
+
     }
 
 }
