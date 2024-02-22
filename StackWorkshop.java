@@ -9,6 +9,8 @@
 * */
 
 import java.lang.*;
+import java.util.Arrays;
+import java.util.Scanner;
 import java.util.Stack;
 
 class StackWorkshop{
@@ -39,7 +41,19 @@ class StackWorkshop{
         System.out.println(myStack.size());
 
 
+        System.out.println("What character would you like to enter?: ");
+        Scanner stackScanner = new Scanner(System.in);
+        String str = stackScanner.nextLine();
+        Stack<String> myScannerStack = new Stack<String>();
 
+            while(!str.equals("undo")) {
+                myScannerStack.push(str);
+                System.out.println(myScannerStack);
+                System.out.println("Would you like to add another character?: ");
+                str = stackScanner.nextLine();
+            }
+        System.out.println("you have pushed " + str +
+                " therefore you get what is stored in the stack. Look: " + myScannerStack.peek());
     }
 
 }
