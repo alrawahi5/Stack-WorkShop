@@ -15,6 +15,7 @@ class StackWorkShop4ClearStack{
             stackElement1 = stackScanner.nextLine();
         }
         System.out.println(stackElemente);
+        stackScanner.close();
     }
         public static void clearTheStck() {
         if(!stackElemente.empty()) {
