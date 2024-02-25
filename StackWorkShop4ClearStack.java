@@ -5,7 +5,7 @@ import java.util.Stack;
 class StackWorkShop4ClearStack{
 
     public static Stack<String> stackElemente = new Stack<String>();
-    public static void fillTheStck() {
+    public static void fillTheStack() {
         System.out.println("Enyer your stack elemernt: ");
         Scanner stackScanner = new Scanner(System.in);
         String stackElement1 = stackScanner.nextLine();
@@ -18,14 +18,17 @@ class StackWorkShop4ClearStack{
     }
         public static void clearTheStck() {
         if(!stackElemente.empty()) {
-            System.out.println("Your stack is cleared: " + stackElemente.removeAll(stackElemente));
+            stackElemente.clear();
+            System.out.println("Your stack is cleared" );
             System.out.println(stackElemente);
          }
+        else {
             System.out.println("Your stack is already clear! ");
+            }
         }
 
     public static void main(String[] args) {
-        fillTheStck();
+        fillTheStack();
         clearTheStck();
 
     }
