@@ -11,10 +11,14 @@ class StackWorkshop3URL{
         String URL = stackScanner.nextLine();
         Stack<String> urlStack = new Stack<String>();
         while(!URL.equals("back")){
+
                 urlStack.push(URL);
                 URL = stackScanner.nextLine();
             }
+        if(!urlStack.empty()) {
             System.out.println("Your browsing history contains the following sites: " + urlStack);
-            System.out.println("The last visited site is: " + urlStack.pop());
+            System.out.println("The last visited site is: " + urlStack.peek());
+            }
+        System.out.println("Your browsing history is empty! ");
+        }
     }
-}
