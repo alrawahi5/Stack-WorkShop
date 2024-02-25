@@ -6,7 +6,7 @@ import java.util.Stack;
 class StackWorkshop2{
     public static void main(String[] args) {
 
-        System.out.println("What character would you like to enter?: ");
+        System.out.println("What number would you like to enter?: ");
         Scanner stackScanner = new Scanner(System.in);
         Integer number = stackScanner.nextInt();
         Stack<Integer> originalOrderNums = new Stack<Integer>();
