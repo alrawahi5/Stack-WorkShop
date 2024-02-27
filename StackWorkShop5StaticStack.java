@@ -6,7 +6,7 @@ class StackWorkShop5StaticStack{
 
     public static Stack<Integer> stackElemente = new Stack<Integer>();
     public static void pushTheStck() {
-            //pushTheStck();
+            pushTheStck();
 
             System.out.println("Enyer your stack element: ");
             Scanner stackScanner = new Scanner(System.in);
