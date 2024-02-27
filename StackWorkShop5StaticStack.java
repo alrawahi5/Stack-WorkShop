@@ -7,7 +7,6 @@ class StackWorkShop5StaticStack{
     public static Stack<Integer> stackElemente = new Stack<Integer>();
     public static void pushTheStck() {
             pushTheStck();
-
             System.out.println("Enyer your stack element: ");
             Scanner stackScanner = new Scanner(System.in);
             int stackElement1 = stackScanner.nextInt();
@@ -29,11 +28,7 @@ class StackWorkShop5StaticStack{
         System.out.println("Your stack has been cleared! ");
     }
     public static void main(String[] args) {
-
-
-
         pushTheStck();
         popTheStck();
-
     }
 }
